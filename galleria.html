@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Galleria</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="nayttoCSS.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="customscript.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll" id="mynav">
+        <div class="container">
+            <a class="navbar-brand" href="#">Kotkantien maalamo- ja tapetointi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Etusivu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="palvelut.html">Palvelut</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vari.html">Värien testaus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galleria.html">Galleria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="yhteystiedot.html">Yhteystiedot</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+      <br><br><br>
+    
+      <div class="container-fluid text-center">
+    
+        <div class="row flex-lg-row align-items-center text-white text-center m-5 py-5 rounded-pill shadow-lg varitetty">
+            <h1>Täällä galleria osiossa pääset katselemaan joitakin asiakkaille tehtyjä töitä</h1>
+        <p>Voit selata kuvia painamalla navigointi nuolia joko vasemalla tai oikealla</p>
+        <p>Jos löydät kuvista jotain sellaista mitä voisit haluta omaan kotiisi, ole meihin yhteydessä!</p>
+    
+    
+    
+        </div>
+      <div class="row flex-lg-row align-items-center w-75 text-white text-center m-auto g-5 py-5 rounded-3 shadow-lg varitetty">
+        <div class="row">
+      <div id="karuselli" class="carousel slide" data-bs-ride="carousel">
+
+        
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#karuselli" data-bs-slide-to="0" class="active"></button>   <!-- Tähän lisätään divejä kuvien määrän perusteella. Kuvan alle tulee indikaattori mones kuva-->
+          <button type="button" data-bs-target="#karuselli" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#karuselli" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#karuselli" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#karuselli" data-bs-slide-to="4"></button>
+        </div>
+        
+        
+        <div class="carousel-inner pb-5">
+          <div class="carousel-item active">
+            <img src="kuvat/kuva1.jpg" alt="kuva1" class="galleriaKuva" style="width:80%">
+            <div class="carousel-caption">
+                <h3 class= "galleriaKuvaTeksti">Olohuoneen maalaus</h3>
+              
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="kuvat/kuva2.jpg" alt="kuva2" class="galleriaKuva" style="width:80%">        <!-- kopio tästä carousel-item divi ja sen sisältö. Lisää se loppuun saadaksesi uuden kuvan-->
+            <div class="carousel-caption">
+                <h3 class= "galleriaKuvaTeksti">Lasten huone</h3>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="kuvat/kuva3.jpg" alt="kuva3" class="galleriaKuva" style="width:80%">
+            <div class="carousel-caption">
+                <h3 class= "galleriaKuvaTeksti">Olohuoneen tapetointi</h3>
+             
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="kuvat/kuva4.jpg" alt="kuva4" class="galleriaKuva" style="width:80%">
+            <div class="carousel-caption">
+                <h3 class= "galleriaKuvaTeksti">Toisen olohuoneen tapetointi</h3>
+               
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="kuvat/kuva5.jpg" alt="kuva 5" class="galleriaKuva" style="width:80%">
+            <div class="carousel-caption">
+                <h3 class= "galleriaKuvaTeksti">Ulkomaalaus</h3>
+                
+              </div>
+          </div>
+        </div>
+      
+        
+        <!-- Kontrolli nuolet karusellille -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#karuselli" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#karuselli" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class ="footerWrap">
+        <footer class ="align-items-center py-3 mt-5 border-top" id="footer">
+        <div class="container-fluid">
+            <!-- social media icons --> <!-- footteri flex boxissa, -->
+          <p class="col-md-4 mb-0 ">&copy;  Kotkantie 3, 90100 Oulu</p>
+          <div class="social-icons mt-4">
+            <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>  <!-- Iconit yrityksen sosiaalisille tileille. Linkit etusivuille koska yrityksellä ei ole oikeita sivuja-->
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        
+      </div>
+      </footer>
+      </div>
+      </body>
+      
+      </html>
+      
